@@ -2,7 +2,7 @@
 
 void ComeFirstbyCTC(void)__attribute__ ((constructor));
 /**
- * ComeFirst - function that runs befor main
+ * ComeFirstbyCTC - function that runs befor main
  */
 
 void ComeFirstbyCTC(void)
