@@ -4,7 +4,7 @@
  * add_nodeint - add node to the begining of a list
  * @head: pointer to the head pointer
  * @n: int to be created
- * Return: 0 always
+ * Return: the head
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
@@ -12,7 +12,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	listint_t *new_node;
 
 	if (head == NULL)
-		return (0);
+		return (NULL);
 
 	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
@@ -24,5 +24,5 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	new_node->n = n;
 	*head = new_node;
 
-	return (0);
+	return (*head);
 }
